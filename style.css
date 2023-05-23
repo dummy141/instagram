@@ -1,0 +1,221 @@
+:root{
+    --grey: #dbdbdb;
+    --dark_grey: #848484;
+    --bg: #fafafa;
+}
+
+body{
+    background-color: var(--bg);
+    height: 100vh;
+    font-family: -apple-system, "system-ui", "Segoe-UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#user_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    width: 260px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    padding: 40px 40px 20px 40px;
+    margin: 43px 43px 10px 43px;
+}
+
+#font{
+    padding: 0px 50px 30px 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    all: unset;
+    padding: 5px 20px 10px 10px;
+    border: 1px solid var(--grey);
+    margin-top: 7px;
+    border-radius: 3px;
+    background-color: var(--bg);
+}
+
+button{
+    border: none;
+}
+
+#send{
+    background-color: #0095f6;
+    text-align: center;
+    padding: 3px 4px 7px 4px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 14px;
+    height: 22px;
+}
+
+::placeholder{
+    color: var(--dark_grey);
+    font-size: 11.6px;
+}
+
+#space{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#bar{
+    background-color: var(--grey);
+    height: 0.5px;
+    width: 120px;
+}
+
+#or{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--dark_grey);
+    padding: 0px 20px 0px 20px;
+}
+
+#fb{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#fb_logo{
+    height: 15px;
+    width: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#fb_login{
+    background-color: white;
+    color: #385185;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#fb_font{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+#forgot{
+    text-align: center;
+    color: #385185;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+#signup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    width: 260px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    padding: 20px 40px 20px 40px;
+    margin: 0px 43px 0px 43px;
+    font-size: 14px;
+}
+
+#create{
+    color: #0098fd;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+#login_google{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: center;
+    width: 260px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    padding: 20px 40px 20px 40px;
+    margin: 0px 43px 10px 43px;
+    font-size: 14px;
+}
+
+#email{
+    color: #0098fd;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 16px 0px 16px 0px;
+    font-size: 14px;
+}
+
+#download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 8px;
+}
+
+.icon{
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    color: #848484;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.addin{
+    color: #848484;
+    padding: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#send:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 520px){
+    #download{
+        flex-direction: column;
+    }
+}
